@@ -1,10 +1,12 @@
-import { createClient } from '@sanity/client';
+const { createClient } = require('@sanity/client');
 
 const config = {
-  projectId: 'ut3w84xx',
+  projectId: 'l4h1g3vt',
   dataset: 'production',
   useCdn: true,
   apiVersion: '2023-02-17',
   token: process.env.SANITY_SECRET_TOKEN,
 };
-export const Client = createClient(config);
+const Client = createClient(config);
+
+module.exports = { Client };

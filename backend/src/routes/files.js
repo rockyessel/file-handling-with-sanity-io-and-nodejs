@@ -1,6 +1,6 @@
 const express = require('express');
-const { PostFile } = require('../controllers/files');
 const { upload } = require('../utils/services');
+const { PostFile } = require('../controller/files');
 
 const router = express.Router();
 
